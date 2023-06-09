@@ -81,7 +81,7 @@ app.get("/last-meal", async (req, res) => {
     if (result.length === 0) {
       res.status(404).send("There are no meals");
     } else {
-      res.json(result[0]); // an object
+      res.json(result[0]); // an object 
     }
   } catch (error) {
     console.error(error.message);
